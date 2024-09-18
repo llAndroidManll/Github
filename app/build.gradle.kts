@@ -100,4 +100,11 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime.compose)
     // Saved state module for ViewModel
     implementation(libs.androidx.lifecycle.viewmodel.savedstate)
+
+    //Window Class Size
+    implementation("androidx.compose.material3:material3-window-size-class-android:1.3.0")
+}
+
+kapt {
+    correctErrorTypes = true
 }
