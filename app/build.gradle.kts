@@ -63,6 +63,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.runtime.livedata)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -103,6 +104,9 @@ dependencies {
 
     //Window Class Size
     implementation("androidx.compose.material3:material3-window-size-class-android:1.3.0")
+
+    // Hilt ViewModel
+    implementation(libs.androidx.hilt.navigation.compose)
 }
 
 kapt {

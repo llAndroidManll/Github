@@ -1,7 +1,9 @@
 package sahak.sahakyan.github.presentation.ui.components
 
 
-import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.runtime.Composable
@@ -29,9 +31,11 @@ fun IndeterminateCircularIndicator(
         isLoading = false
     }
 
-    Box(
-        modifier = modifier,
-        contentAlignment = Alignment.Center,
+    Column (
+        modifier = modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally,
+
     ) {
         if (isLoading) {
             CircularProgressIndicator(
